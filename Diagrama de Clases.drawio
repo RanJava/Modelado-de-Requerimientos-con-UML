@@ -1,0 +1,31 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36" version="29.4.0">
+  <diagram name="Página-1" id="X_rzs1HZKhgvFEpCp0-U">
+    <mxGraphModel dx="1426" dy="785" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Pa6p7Et7vd37hxkRlpSq-1" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;html=1;" value="Estudiante&lt;div&gt;&lt;br&gt;- idEstudiante: String&lt;br&gt;- nombre: String&lt;br&gt;- multasPendientes: double&lt;br&gt;- totalLibrosPrestados: int&lt;div&gt;&lt;br&gt;+ tieneMultas(): boolean&lt;br&gt;+ puedePrestar(): boolean&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="150" width="190" x="240" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="Pa6p7Et7vd37hxkRlpSq-2" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;html=1;" value="Libro&lt;br&gt;&lt;br&gt;- idLibro: String&lt;br&gt;- titulo: String&lt;br&gt;- estado: String&lt;br&gt;- autor: String&lt;br&gt;&lt;br&gt;+ estaDisponible(): boolean&lt;br&gt;+ actualizarEstado(nuevo: String)" vertex="1">
+          <mxGeometry height="150" width="190" x="740" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="Pa6p7Et7vd37hxkRlpSq-3" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;html=1;" value="Prestamo&lt;br&gt;&lt;br&gt;- idPrestamo: String&lt;br&gt;- fechaInicio: Date&lt;br&gt;- fechaDevolucion: Date&lt;br&gt;- estado: String&lt;br&gt;&lt;br&gt;+ registrar(): void&lt;br&gt;+ finalizar(): void" vertex="1">
+          <mxGeometry height="150" width="200" x="490" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="Pa6p7Et7vd37hxkRlpSq-4" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;html=1;" value="Bibliotecario&lt;br&gt;&lt;br&gt;- idEmpleado: String&lt;br&gt;- nombre: String&lt;br&gt;&lt;br&gt;+ gestionarPrestamo(): void" vertex="1">
+          <mxGeometry height="110" width="170" x="240" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="Pa6p7Et7vd37hxkRlpSq-5" edge="1" parent="1" source="Pa6p7Et7vd37hxkRlpSq-1" style="endArrow=none;html=1;exitX=1;exitY=0.5;entryX=0.5;entryY=0;edgeStyle=orthogonalEdgeStyle;" target="Pa6p7Et7vd37hxkRlpSq-3" value="1              *">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Pa6p7Et7vd37hxkRlpSq-6" edge="1" parent="1" source="Pa6p7Et7vd37hxkRlpSq-2" style="endArrow=none;html=1;exitX=0;exitY=0.5;entryX=0.5;entryY=0;edgeStyle=orthogonalEdgeStyle;" target="Pa6p7Et7vd37hxkRlpSq-3" value="1              *">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Pa6p7Et7vd37hxkRlpSq-7" edge="1" parent="1" source="Pa6p7Et7vd37hxkRlpSq-4" style="endArrow=none;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="Pa6p7Et7vd37hxkRlpSq-3" value="1         *">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
