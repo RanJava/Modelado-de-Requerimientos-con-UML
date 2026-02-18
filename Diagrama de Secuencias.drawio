@@ -1,0 +1,43 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36" version="29.4.0">
+  <diagram name="Página-1" id="6CKnBX0uUVNQqG0IECyj">
+    <mxGraphModel dx="1426" dy="785" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="GND95EdGItmAV08qQWhR-1" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" value=":Bibliotecario" vertex="1">
+          <mxGeometry height="400" width="100" x="290" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="GND95EdGItmAV08qQWhR-2" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" value="est:Estudiante" vertex="1">
+          <mxGeometry height="400" width="100" x="490" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="GND95EdGItmAV08qQWhR-3" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" value="lib:Libro" vertex="1">
+          <mxGeometry height="400" width="100" x="690" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="GND95EdGItmAV08qQWhR-4" edge="1" parent="1" source="GND95EdGItmAV08qQWhR-1" style="endArrow=block;html=1;verticalAlign=bottom;exitX=0.5;exitY=0.2;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0.2;entryDx=0;entryDy=0;entryPerimeter=0;" target="GND95EdGItmAV08qQWhR-2" value="1. verificarEstado()">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GND95EdGItmAV08qQWhR-5" edge="1" parent="1" source="GND95EdGItmAV08qQWhR-2" style="endArrow=open;html=1;verticalAlign=bottom;dashed=1;exitX=0.5;exitY=0.3;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0.3;entryDx=0;entryDy=0;entryPerimeter=0;" target="GND95EdGItmAV08qQWhR-1" value="2. estadoOK">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GND95EdGItmAV08qQWhR-6" edge="1" parent="1" source="GND95EdGItmAV08qQWhR-1" style="endArrow=block;html=1;verticalAlign=bottom;exitX=0.5;exitY=0.45;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0.45;entryDx=0;entryDy=0;entryPerimeter=0;" target="GND95EdGItmAV08qQWhR-3" value="3. estaDisponible()">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GND95EdGItmAV08qQWhR-7" edge="1" parent="1" source="GND95EdGItmAV08qQWhR-3" style="endArrow=open;html=1;verticalAlign=bottom;dashed=1;exitX=0.5;exitY=0.55;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0.55;entryDx=0;entryDy=0;entryPerimeter=0;" target="GND95EdGItmAV08qQWhR-1" value="4. disponible">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GND95EdGItmAV08qQWhR-8" edge="1" parent="1" source="GND95EdGItmAV08qQWhR-1" style="endArrow=block;html=1;verticalAlign=bottom;exitX=0.5;exitY=0.75;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0.75;entryDx=0;entryDy=0;entryPerimeter=0;" target="GND95EdGItmAV08qQWhR-3" value="5. registrarPrestamo()">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GND95EdGItmAV08qQWhR-9" edge="1" parent="1" source="GND95EdGItmAV08qQWhR-3" style="endArrow=open;html=1;verticalAlign=bottom;dashed=1;exitX=0.5;exitY=0.85;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0.85;entryDx=0;entryDy=0;entryPerimeter=0;" target="GND95EdGItmAV08qQWhR-1" value="6. confirmar">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GND95EdGItmAV08qQWhR-10" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" value="Bibliotecario&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="30" x="250" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="GND95EdGItmAV08qQWhR-11" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" value="&lt;div&gt;Estudiante&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="30" x="440" y="120" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
