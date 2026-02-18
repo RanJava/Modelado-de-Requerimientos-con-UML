@@ -1,0 +1,72 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36" version="29.4.0">
+  <diagram name="Página-1" id="1392eO973h3EEMeewrHh">
+    <mxGraphModel dx="1426" dy="785" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="XkmsIQ8BOqhXJTcub6BN-1" parent="1" style="shape=swimlane;whiteSpace=wrap;html=1;startSize=23;" value="Sistema de Gestión de Biblioteca" vertex="1">
+          <mxGeometry height="480" width="400" x="300" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="XkmsIQ8BOqhXJTcub6BN-2" parent="XkmsIQ8BOqhXJTcub6BN-1" style="ellipse;whiteSpace=wrap;html=1;" value="Registrar Préstamo de Libro" vertex="1">
+          <mxGeometry height="70" width="140" x="110" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="XkmsIQ8BOqhXJTcub6BN-3" parent="XkmsIQ8BOqhXJTcub6BN-1" style="ellipse;whiteSpace=wrap;html=1;" value="Verificar Disponibilidad de Libro" vertex="1">
+          <mxGeometry height="60" width="130" x="250" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="XkmsIQ8BOqhXJTcub6BN-4" parent="XkmsIQ8BOqhXJTcub6BN-1" style="ellipse;whiteSpace=wrap;html=1;" value="Validar Estado del Estudiante" vertex="1">
+          <mxGeometry height="60" width="130" x="250" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="XkmsIQ8BOqhXJTcub6BN-5" parent="XkmsIQ8BOqhXJTcub6BN-1" style="ellipse;whiteSpace=wrap;html=1;" value="Notificar Multas Pendientes" vertex="1">
+          <mxGeometry height="60" width="130" x="20" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="XkmsIQ8BOqhXJTcub6BN-6" edge="1" parent="XkmsIQ8BOqhXJTcub6BN-1" source="XkmsIQ8BOqhXJTcub6BN-2" style="endArrow=open;dashed=1;html=1;exitX=1;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endFill=0;" target="XkmsIQ8BOqhXJTcub6BN-3" value="&lt;&lt;include&gt;&gt;">
+          <mxGeometry height="50" relative="1" width="50" as="geometry" />
+        </mxCell>
+        <mxCell id="XkmsIQ8BOqhXJTcub6BN-7" edge="1" parent="XkmsIQ8BOqhXJTcub6BN-1" source="XkmsIQ8BOqhXJTcub6BN-2" style="endArrow=open;dashed=1;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endFill=0;" target="XkmsIQ8BOqhXJTcub6BN-4" value="&lt;&lt;include&gt;&gt;">
+          <mxGeometry height="50" relative="1" width="50" as="geometry" />
+        </mxCell>
+        <mxCell id="XkmsIQ8BOqhXJTcub6BN-8" edge="1" parent="XkmsIQ8BOqhXJTcub6BN-1" source="XkmsIQ8BOqhXJTcub6BN-5" style="endArrow=open;dashed=1;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=1;entryDx=0;entryDy=0;endFill=0;" target="XkmsIQ8BOqhXJTcub6BN-2" value="&lt;&lt;extend&gt;&gt;">
+          <mxGeometry height="50" relative="1" width="50" x="-0.0035" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XkmsIQ8BOqhXJTcub6BN-9" parent="XkmsIQ8BOqhXJTcub6BN-1" style="ellipse;whiteSpace=wrap;html=1;" value="Verificar cantidad de prestamos posibles" vertex="1">
+          <mxGeometry height="60" width="130" x="140" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="XkmsIQ8BOqhXJTcub6BN-10" edge="1" parent="XkmsIQ8BOqhXJTcub6BN-1" source="XkmsIQ8BOqhXJTcub6BN-9" style="endArrow=open;dashed=1;html=1;entryX=0.636;entryY=1.014;entryDx=0;entryDy=0;endFill=0;entryPerimeter=0;" target="XkmsIQ8BOqhXJTcub6BN-2" value="&lt;&lt;extend&gt;&gt;">
+          <mxGeometry height="50" relative="1" width="50" x="-0.0035" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="180" y="400" as="sourcePoint" />
+            <mxPoint x="226" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XkmsIQ8BOqhXJTcub6BN-11" edge="1" parent="XkmsIQ8BOqhXJTcub6BN-1" style="endArrow=open;dashed=1;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;endFill=0;entryX=0.6;entryY=0.017;entryDx=0;entryDy=0;entryPerimeter=0;" target="XkmsIQ8BOqhXJTcub6BN-12" value="&lt;&lt;extend&gt;&gt;">
+          <mxGeometry height="50" relative="1" width="50" x="-0.0035" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="230" y="360" as="sourcePoint" />
+            <mxPoint x="290" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XkmsIQ8BOqhXJTcub6BN-12" parent="XkmsIQ8BOqhXJTcub6BN-1" style="ellipse;whiteSpace=wrap;html=1;" value="Verificar cantidad de prestamos realizados" vertex="1">
+          <mxGeometry height="60" width="130" x="190" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="XkmsIQ8BOqhXJTcub6BN-13" parent="XkmsIQ8BOqhXJTcub6BN-1" style="ellipse;whiteSpace=wrap;html=1;" value="Renovar prestamos" vertex="1">
+          <mxGeometry height="60" width="130" x="70" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="XkmsIQ8BOqhXJTcub6BN-14" edge="1" parent="XkmsIQ8BOqhXJTcub6BN-1" source="XkmsIQ8BOqhXJTcub6BN-2" style="endArrow=open;dashed=1;html=1;entryX=0.636;entryY=1.014;entryDx=0;entryDy=0;endFill=0;entryPerimeter=0;" value="&lt;&lt;extend&gt;&gt;">
+          <mxGeometry height="50" relative="1" width="50" x="-0.0035" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="124" y="179" as="sourcePoint" />
+            <mxPoint x="120" y="110" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XkmsIQ8BOqhXJTcub6BN-15" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="Bibliotecario" vertex="1">
+          <mxGeometry height="60" width="30" x="150" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="XkmsIQ8BOqhXJTcub6BN-16" edge="1" parent="1" source="XkmsIQ8BOqhXJTcub6BN-15" style="endArrow=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="XkmsIQ8BOqhXJTcub6BN-2" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
