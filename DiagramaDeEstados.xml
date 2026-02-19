@@ -1,0 +1,58 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 Edg/144.0.0.0" version="29.4.0">
+  <diagram name="Diagrama de Estados - Libro Corregido" id="0">
+    <mxGraphModel dx="778" dy="454" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="inicio" parent="1" style="ellipse;fillColor=#000000;" value="" vertex="1">
+          <mxGeometry height="30" width="30" x="380" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="disponible" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Disponible" vertex="1">
+          <mxGeometry height="60" width="150" x="340" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="prestado" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Prestado" vertex="1">
+          <mxGeometry height="60" width="150" x="100" y="530" as="geometry" />
+        </mxCell>
+        <mxCell id="enmora" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Esperando devolucion" vertex="1">
+          <mxGeometry height="60" width="150" x="600" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="t1" edge="1" parent="1" source="inicio" style="endArrow=block;" target="disponible" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t2" edge="1" parent="1" source="disponible" style="endArrow=block;" target="validando" value="solicitarPrestamo">
+          <mxGeometry relative="1" x="0.1794" y="20" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t3" edge="1" parent="1" source="validando" style="endArrow=block;" target="prestado" value="Verificar multas y que libros &lt; 3 -  registrarPrestamo&#39;&#xa;asignarFechaDevolucion">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t4" edge="1" parent="1" source="validando" style="endArrow=block;" target="disponible" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t5" edge="1" parent="1" source="validando" style="endArrow=block;" target="enmora" value="fechaVencida">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t6" edge="1" parent="1" source="prestado" style="endArrow=block;" target="disponible" value="devolverLibro - registrarDevolucion">
+          <mxGeometry relative="1" x="-0.0253" y="-6" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t7" edge="1" parent="1" source="enmora" style="endArrow=block;" target="disponible" value="devolverLibro - registrarDevolucion&#xa;generarMulta">
+          <mxGeometry relative="1" x="-0.037" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="o2aP_dBPmpu30jlpthSo-2" edge="1" parent="1" source="prestado" style="endArrow=block;" target="validando" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="215" y="530" as="sourcePoint" />
+            <mxPoint x="435" y="365" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="validando" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Validando préstamo" vertex="1">
+          <mxGeometry height="60" width="170" x="590" y="510" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
